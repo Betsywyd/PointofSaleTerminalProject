@@ -1,0 +1,15 @@
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\bin\Debug\net6.0\PointOfSaleTerminal.exe
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\bin\Debug\net6.0\PointOfSaleTerminal.deps.json
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\bin\Debug\net6.0\PointOfSaleTerminal.runtimeconfig.json
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\bin\Debug\net6.0\PointOfSaleTerminal.dll
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\bin\Debug\net6.0\PointOfSaleTerminal.pdb
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.csproj.AssemblyReference.cache
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.AssemblyInfoInputs.cache
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.AssemblyInfo.cs
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.csproj.CoreCompileInputs.cache
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.dll
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\refint\PointOfSaleTerminal.dll
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.pdb
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\PointOfSaleTerminal.genruntimeconfig.cache
+C:\Users\shife\Desktop\C# bootcamp\Csharp\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\PointOfSaleTerminal\obj\Debug\net6.0\ref\PointOfSaleTerminal.dll
