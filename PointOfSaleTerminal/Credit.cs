@@ -10,18 +10,7 @@ namespace PointOfSaleTerminal
     class Credit:Payment
 
     {
-        //public static decimal PayCredit(string cardNo, string expiryDate, string cvv)
-        //{
-        //    Console.WriteLine("plese enter Credit card number: ");
-        //    //string cardNo, string expiryDate, string cvv
-        //    string cardNo=Console.ReadLine();
-        //    Console.WriteLine("plese enter expiration number: ");
-        //    string expiryDate=Console.ReadLine();
-        //    Console.WriteLine("plese enter cvv number: ");
-        //    string cvv=Console.ReadLine();
-
-        //}
-
+       
         public static string CardNo;
         public static string ExpiryDate;
         public static string Cvv;

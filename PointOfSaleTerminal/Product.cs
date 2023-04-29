@@ -12,14 +12,11 @@ namespace PointOfSaleTerminal
     public class Product:ProductAdmin
     {
 
-        //public string Name { get; set; }
-        //public string Category { get; set; }
-        //public string Description { get; set; }
-        //public decimal Price { get; set; }
         public static List<Product> ProductsList { get; set; } = new List<Product>();
      
-        public Product(string Name, string Category, string Description, decimal Price):base(Name, Category, Description, Price)
+        public Product(int ProductID, string Name, string Category, string Description, decimal Price):base(ProductID,Name, Category, Description, Price)
         {
+            this.ProductID = ProductID;
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;
@@ -32,7 +29,7 @@ namespace PointOfSaleTerminal
         public override string ToString()
         {
 
-            return String.Format("{0,-15} {1,-18} {2,-30} ${3,-10}", Name, Category, Description, Price);
+            return String.Format("{0,-5}{1,-15} {2,-18} {3,-30} ${4,-10}", ProductID, Name, Category, Description, Price);
         }
 
         public virtual string  PrintHead()
@@ -45,7 +42,7 @@ namespace PointOfSaleTerminal
          
             for (int i = 0; i < list.Count; i++)
             {
-                Console.WriteLine(i + 1 + ".\t" + list[i].ToString());
+                Console.WriteLine(list[i].ToString());
             }
         }
 

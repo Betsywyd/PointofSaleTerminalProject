@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PointOfSaleTerminal
 {
-    class ProductOrder
+    public class ProductOrder
     {
         public static void Order()
         {
@@ -92,12 +92,14 @@ namespace PointOfSaleTerminal
                                     ProductPurchased.OrderList[j].Quantity += quantity;
                                     ProductPurchased.OrderList[j].SubTotal = ProductPurchased.OrderList[j].Quantity * ProductPurchased.OrderList[j].Price;
 
+
                                 }
                             }
                         }
                         else
                         {
-                            ProductPurchased.OrderList.Add(new ProductPurchased(p.Name, p.Category, p.Description, p.Price, quantity, quantity * p.Price));
+                            ProductPurchased.OrderList.Add(new ProductPurchased(ProductPurchased.OrderList.Count+1, p.Name, p.Category, p.Description, p.Price, quantity, quantity * p.Price));
+                         
                         }
                         Console.WriteLine("you added " + quantity + " " + input + " to orderlist!");
 
@@ -128,8 +130,6 @@ namespace PointOfSaleTerminal
 
             Payment.PaymentMethod = Payment.PaymentWay();
 
-
-
             if (Payment.PaymentMethod == "cash")
             {
                 Cash.Value = Validator.GetValue();
@@ -151,9 +151,6 @@ namespace PointOfSaleTerminal
                 Check.Change = 0;
                 Check.PayCheck("plese enter check number(9 digit): ");
             }
-
-
-
 
         }
 

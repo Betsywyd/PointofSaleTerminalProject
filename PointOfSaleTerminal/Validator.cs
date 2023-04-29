@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PointOfSaleTerminal
 {
-    class Validator
+    public class Validator
     {
         public static bool WithinRange(int index, List<Product> list)
         {
@@ -67,7 +67,7 @@ namespace PointOfSaleTerminal
                 return GetIntFromUser(x);
             }
         }
-
+      
         public static decimal GetIntFromUser()
         {
 
@@ -139,10 +139,11 @@ namespace PointOfSaleTerminal
           
             if (x == 1)
             {   ProductPurchased.OrderList.Clear();
-                Product.PrintProducts(Product.ProductsList);
                 Product product = new Product();
                 Console.WriteLine(product.PrintHead());
                 Console.WriteLine("-----------------------------------------------------------------------------------------");
+                Product.PrintProducts(Product.ProductsList);
+               
                 ProductOrder.Order();
             }
             else if (x == 2)
@@ -155,7 +156,7 @@ namespace PointOfSaleTerminal
             }
             else
             {
-                Validator.GetIntFromUser("Do you want have an order or go to ProductAdmin or Exit,enter number?  1. Order  2.ProductAdmin 3.Exit");
+                Validator.GetIntFromUser("Do you want have an order or go to ProductAdmin or Exit,enter number?  1. Order  2.ProductAdmin 3.Exit ");
             }
         }
 

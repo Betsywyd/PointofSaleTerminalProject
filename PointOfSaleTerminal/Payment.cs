@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace PointOfSaleTerminal
 {
-    class Payment
+    public class Payment
     {
         public static string PaymentMethod { get; set; }
         public static decimal Value { get; set; }

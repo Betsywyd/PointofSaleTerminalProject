@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PointOfSaleTerminal
 {
-    class Cash:Payment
+    public class Cash:Payment
 
     {
         public Cash(string PaymentMethod, decimal Value, decimal Change, decimal GrandTotal) :base( PaymentMethod, Value, Change, GrandTotal)

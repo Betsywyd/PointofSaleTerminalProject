@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace PointOfSaleTerminal
 {
-    class ProductPurchased : Product
+    public class ProductPurchased : Product
     {
         public int Quantity { get; set; }
         public decimal SubTotal { get; set; }
         public DateTime Date { get; set; }
 
         public static List<ProductPurchased> OrderList { get; set; } = new List<ProductPurchased>();
-        public ProductPurchased(string Name, string Category, string Description, decimal Price,int Quantity, decimal SubTotal ) : base(Name, Category, Description, Price)
+        public ProductPurchased(int ProductID,string Name, string Category, string Description, decimal Price,int Quantity, decimal SubTotal ) : base( ProductID, Name, Category, Description, Price)
         {
+            this.ProductID =ProductID;
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;
@@ -50,8 +51,10 @@ namespace PointOfSaleTerminal
             }
             decimal tax = 0.06m * total;
             decimal GrandTotal = total + tax;
+            foreach(ProductPurchased order in OrderList)
+            { SoldProductsSum.SoldSumList.Add(new SoldProductsSum(order.ProductID, order.Name, order.Category, order.Description, order.Price, order.Quantity, order.SubTotal)); }
 
-            ProductPurchased.PrintProducts(ProductPurchased.OrderList.Cast<Product>().ToList());
+                ProductPurchased.PrintProducts(ProductPurchased.OrderList.Cast<Product>().ToList());
             Console.WriteLine("-----------------------------------------------------------------------------------------");
             Console.WriteLine("{0}{1,-15} {2,-18} {3,-30} {4,30}", "    ", "Total", " ", "  ", Math.Round(total,2));
             Console.WriteLine("{0}{1,-15} {2,-18} {3,-30} {4,30}", "    ", "Tax", " ", "  ", Math.Round(tax,2));
