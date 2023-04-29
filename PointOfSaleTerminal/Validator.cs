@@ -21,9 +21,6 @@ namespace PointOfSaleTerminal
             }
         }
 
-
-
-
         public static int GetIntFromUser(string message)
         {
             Console.WriteLine(message);
@@ -48,6 +45,51 @@ namespace PointOfSaleTerminal
             }
         }
 
+        public static int GetIntFromUser(int x)
+        {
+       
+            try
+            {
+                int num = int.Parse(Console.ReadLine());
+                if (num > 0&&num<=x)
+                {
+                    return num;
+                }
+                else
+                {
+                    Console.WriteLine("That was not a valid integer lets try again");
+                    return GetIntFromUser(x);
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("That was not a valid integer lets try again");
+                return GetIntFromUser(x);
+            }
+        }
+
+        public static decimal GetIntFromUser()
+        {
+
+            try
+            {
+                decimal num = decimal.Parse(Console.ReadLine());
+                if (num > 0 )
+                {
+                    return num;
+                }
+                else
+                {
+                    Console.WriteLine("That was not a valid integer lets try again");
+                    return GetIntFromUser();
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("That was not a valid integer lets try again");
+                return GetIntFromUser();
+            }
+        }
         public static decimal GetValue()
         {
             Console.WriteLine("How much cash:  ");
@@ -92,8 +134,32 @@ namespace PointOfSaleTerminal
 
         }
 
+        public static void OrderOrAdmin(int x)
+        {
+          
+            if (x == 1)
+            {   ProductPurchased.OrderList.Clear();
+                Product.PrintProducts(Product.ProductsList);
+                Product product = new Product();
+                Console.WriteLine(product.PrintHead());
+                Console.WriteLine("-----------------------------------------------------------------------------------------");
+                ProductOrder.Order();
+            }
+            else if (x == 2)
+            {
+              ProductAdmin.AdminItem();
+            }
+            else if (x == 3)
+            {
+                return;
+            }
+            else
+            {
+                Validator.GetIntFromUser("Do you want have an order or go to ProductAdmin or Exit,enter number?  1. Order  2.ProductAdmin 3.Exit");
+            }
+        }
+
        
     }
-
 
 }

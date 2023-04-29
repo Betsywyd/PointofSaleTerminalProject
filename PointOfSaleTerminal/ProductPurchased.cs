@@ -40,8 +40,6 @@ namespace PointOfSaleTerminal
             
         }
 
-
-
         public static decimal TotalReceipt(List<ProductPurchased> OrderList)
 
         {
@@ -61,7 +59,6 @@ namespace PointOfSaleTerminal
             Console.WriteLine("{0}{1,-15} {2,-18} {3,-30} {4,30}", "    ", "DateTime ", " ", "  ", DateTime.Now);
             return GrandTotal;
         }
-       
-
+ 
     }
 }

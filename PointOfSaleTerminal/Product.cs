@@ -9,25 +9,23 @@ using System.Threading.Tasks;
 
 namespace PointOfSaleTerminal
 {
-    public class Product
+    public class Product:ProductAdmin
     {
 
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
+        //public string Name { get; set; }
+        //public string Category { get; set; }
+        //public string Description { get; set; }
+        //public decimal Price { get; set; }
         public static List<Product> ProductsList { get; set; } = new List<Product>();
-      
-
-
-        public Product(string Name, string Category, string Description, decimal Price)
+     
+        public Product(string Name, string Category, string Description, decimal Price):base(Name, Category, Description, Price)
         {
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;
             this.Price = Price;
         }
-        public Product()
+        public Product():base()
         {
 
         }
@@ -50,10 +48,6 @@ namespace PointOfSaleTerminal
                 Console.WriteLine(i + 1 + ".\t" + list[i].ToString());
             }
         }
-
-
-       
-
 
     }
    
