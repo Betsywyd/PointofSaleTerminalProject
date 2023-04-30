@@ -13,9 +13,9 @@ namespace PointOfSaleTerminal
         public DateTime Date { get; set; }
 
         public static List<ProductPurchased> OrderList { get; set; } = new List<ProductPurchased>();
-        public ProductPurchased(int ProductID,string Name, string Category, string Description, decimal Price,int Quantity, decimal SubTotal ) : base( ProductID, Name, Category, Description, Price)
+        public ProductPurchased(int ProductNo,string Name, string Category, string Description, decimal Price,int Quantity, decimal SubTotal ) : base( ProductNo, Name, Category, Description, Price)
         {
-            this.ProductID =ProductID;
+            this.ProductNo =ProductNo;
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;
@@ -52,7 +52,7 @@ namespace PointOfSaleTerminal
             decimal tax = 0.06m * total;
             decimal GrandTotal = total + tax;
             foreach(ProductPurchased order in OrderList)
-            { SoldProductsSum.SoldSumList.Add(new SoldProductsSum(order.ProductID, order.Name, order.Category, order.Description, order.Price, order.Quantity, order.SubTotal)); }
+            { SoldProductsSum.SoldSumList.Add(new SoldProductsSum(order.ProductNo, order.Name, order.Category, order.Description, order.Price, order.Quantity, order.SubTotal)); }
 
                 ProductPurchased.PrintProducts(ProductPurchased.OrderList.Cast<Product>().ToList());
             Console.WriteLine("-----------------------------------------------------------------------------------------");

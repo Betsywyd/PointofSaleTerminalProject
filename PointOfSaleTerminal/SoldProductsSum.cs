@@ -10,9 +10,9 @@ namespace PointOfSaleTerminal
     {
         public static List<SoldProductsSum> SoldSumList { get; set; } = new List<SoldProductsSum>();
 
-        public SoldProductsSum(int ProductID, string Name, string Category, string Description, decimal Price, int Quantity, decimal SubTotal) : base(ProductID, Name, Category, Description, Price,Quantity,SubTotal)
+        public SoldProductsSum(int ProductNo, string Name, string Category, string Description, decimal Price, int Quantity, decimal SubTotal) : base(ProductNo, Name, Category, Description, Price,Quantity,SubTotal)
         {
-            this.ProductID = ProductID;
+            this.ProductNo = ProductNo;
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;

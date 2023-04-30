@@ -14,9 +14,9 @@ namespace PointOfSaleTerminal
 
         public static List<Product> ProductsList { get; set; } = new List<Product>();
      
-        public Product(int ProductID, string Name, string Category, string Description, decimal Price):base(ProductID,Name, Category, Description, Price)
+        public Product(int ProductNo, string Name, string Category, string Description, decimal Price):base(ProductNo,Name, Category, Description, Price)
         {
-            this.ProductID = ProductID;
+            this.ProductNo = ProductNo;
             this.Name = Name;
             this.Category = Category;
             this.Description = Description;
@@ -29,7 +29,7 @@ namespace PointOfSaleTerminal
         public override string ToString()
         {
 
-            return String.Format("{0,-5}{1,-15} {2,-18} {3,-30} ${4,-10}", ProductID, Name, Category, Description, Price);
+            return String.Format("{0,-5}{1,-15} {2,-18} {3,-30} ${4,-10}", ProductNo, Name, Category, Description, Price);
         }
 
         public virtual string  PrintHead()
