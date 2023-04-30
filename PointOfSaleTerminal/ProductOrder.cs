@@ -15,7 +15,7 @@ namespace PointOfSaleTerminal
 
             do
             {
-                Console.WriteLine("what product do you want to purchase,enter a number or name of products:");
+                Console.WriteLine("what product do you want to purchase,enter a number or name of products by list:");
                 List<string> name = new List<string>();
                 for (int i = 0; i < Product.ProductsList.Count; i++)
                 {

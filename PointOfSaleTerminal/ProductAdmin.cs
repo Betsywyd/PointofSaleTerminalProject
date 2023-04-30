@@ -32,7 +32,7 @@ namespace PointOfSaleTerminal
         public static void AdminItem()
         {
             Console.WriteLine("what do you want to change for product? ");
-            Console.WriteLine("1.Add product from ProductsList \n 2.Remove product from ProductList \n 3.Change Products Properties \n 4.Show sold product list in the past \n 5.Exit");
+            Console.WriteLine("1.Add product from ProductsList \n 2.Remove product from ProductList \n 3.Change Products Properties \n 4.Show sold product list in the past \n 5.Exit ProductAdmin");
             int a=Validator.GetIntFromUser(5);
             if (a==1)
             {
