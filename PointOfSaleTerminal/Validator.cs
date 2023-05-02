@@ -45,6 +45,9 @@ namespace PointOfSaleTerminal
             }
         }
 
+       
+
+
         public static int GetIntFromUser(int x)
         {
        
@@ -80,13 +83,13 @@ namespace PointOfSaleTerminal
                 }
                 else
                 {
-                    Console.WriteLine("That was not a valid integer lets try again");
+                    Console.WriteLine("That was not a valid lets try again");
                     return GetIntFromUser();
                 }
             }
             catch (FormatException)
             {
-                Console.WriteLine("That was not a valid integer lets try again");
+                Console.WriteLine("That was not a valid lets try again");
                 return GetIntFromUser();
             }
         }
@@ -143,7 +146,7 @@ namespace PointOfSaleTerminal
                 Console.WriteLine(product.PrintHead());
                 Console.WriteLine("-----------------------------------------------------------------------------------------");
                 Product.PrintProducts(Product.ProductsList);
-               
+                Console.WriteLine("-----------------------------------------------------------------------------------------");
                 ProductOrder.Order();
             }
             else if (x == 2)

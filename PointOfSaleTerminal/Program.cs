@@ -10,7 +10,7 @@ namespace PointOfSaleTerminal
         static void Main()
 
         {
-            Console.WriteLine("Welcome to BIG STORE!This is our productslist!");
+            Console.WriteLine("Welcome to BIG STORE!");
             Product.ProductsList.Add(new Product((Product.ProductsList.Count+1), "Bread", "Food", "wholegrain", 4.99m));
             Product.ProductsList.Add(new Product((Product.ProductsList.Count +1),"Chips", "Food", "Potatoc chips", 5.99m));
             Product.ProductsList.Add(new Product((Product.ProductsList.Count + 1),"SweetPotato", "Food", "Fesh sweet potato", 0.99m));
@@ -23,11 +23,11 @@ namespace PointOfSaleTerminal
             Product.ProductsList.Add(new Product((Product.ProductsList.Count + 1),"Basketball", "Sporting Goods", "Always round guaranteed", 15.65m));
             Product.ProductsList.Add(new Product((Product.ProductsList.Count + 1),"Horseshoes", "Sporting Goods", "Not for Horses", 44.95m));
             Product.ProductsList.Add(new Product((Product.ProductsList.Count + 1),"Shorts", "Sporting Goods", "For the true sportsperson", 19.98m));
-            Product product = new Product();
-            Console.WriteLine(product.PrintHead());
-            Console.WriteLine("-----------------------------------------------------------------------------------------");
-            Product.PrintProducts(Product.ProductsList);
-            ProductOrder.Order();
+            //Product product = new Product();
+            //Console.WriteLine(product.PrintHead());
+            //Console.WriteLine("-----------------------------------------------------------------------------------------");
+            //Product.PrintProducts(Product.ProductsList);
+            //ProductOrder.Order();
 
             Console.WriteLine();
             bool check = true;

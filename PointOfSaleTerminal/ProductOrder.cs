@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +17,9 @@ namespace PointOfSaleTerminal
 
             do
             {
-                Console.WriteLine("what product do you want to purchase,enter a number or name of products by list:");
+                
+                Console.WriteLine("What product do you want to purchase,enter a number or name of products by list:");
+               
                 List<string> name = new List<string>();
                 for (int i = 0; i < Product.ProductsList.Count; i++)
                 {
@@ -68,7 +72,6 @@ namespace PointOfSaleTerminal
                             check = false;
                         }
 
-
                     }
                 }
 
@@ -112,7 +115,6 @@ namespace PointOfSaleTerminal
                 if (answer == true)
                 {
 
-
                     continue;
                 }
                 else if (answer == false)
@@ -149,7 +151,9 @@ namespace PointOfSaleTerminal
             {
                 Check.Value = ProductPurchased.TotalReceipt(ProductPurchased.OrderList);
                 Check.Change = 0;
-                Check.PayCheck("plese enter check number(9 digit): ");
+     
+                Check.PayCheck();
+                return;
             }
 
         }
