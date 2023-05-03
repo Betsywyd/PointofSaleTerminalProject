@@ -22,7 +22,7 @@ namespace PointOfSaleTerminal
             string s=Console.ReadLine();
             char[] c= s.ToCharArray();
             bool b = c.Count(i => char.IsDigit(i))==9;
-            if (b)
+            if (b && s.Length==9)
             {
                 CheckNo = s;
                 Payment.ReceiptFooter();
